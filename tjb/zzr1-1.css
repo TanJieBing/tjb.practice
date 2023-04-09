@@ -1,0 +1,16 @@
+div
+{  
+	height: 1000px;
+	background-repeat: no-repeat;
+    background-size: 1200px;
+	background-image: url(imgs/tjb3.jpg);
+	animation:myphoto 10s 2s;
+}
+
+@keyframes myphoto
+{
+	0%   {background-image: url(imgs/tjb.4.jpg);}
+	25%  {background-image: url(imgs/tjb3.jpg);}
+	50%  {background-image: url(imgs/tjb2.jpg);}
+	100% {background-image: url(imgs/zyn.jpg);}
+}

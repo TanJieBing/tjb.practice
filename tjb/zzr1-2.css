@@ -1,0 +1,30 @@
+.droptn{ 
+    background-color: aqua;
+    color: black;
+    font-size: 20px;
+    border: 1px;
+    padding: 20px;
+    cursor: crosshair;
+
+}
+.dropdown{
+  position: absolute;
+  display: inline-block;
+}
+.dropdown-content{
+          display: none;
+          position: absolute;
+          background-color: rgb(95, 230, 185);
+          min-width: 120px;
+          
+}
+.dropdown-content a{
+         color: red; 
+         display: block;
+         text-decoration: none;
+          
+}
+.dropdown-content a:hover{background-color: pink;}
+.dropdown:hover .dropdown-content{display: block;}
+.dropdown:hover .droptn{background-color: rgb(207, 239, 207);}
+

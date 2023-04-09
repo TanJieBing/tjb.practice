@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>响应式网页</title>
+    <style>
+        .header{
+                background-color: rgb(103, 163, 223);
+                color: rgb(147, 218, 40);
+                text-align: center;
+                padding: 20px;
+                border: none;
+                font-size: 32px;
+        }
+        .nav{ overflow: hidden;
+             background-color: rgb(145, 177, 201);
+             color: pink;
+             font-size: 16px;
+             padding: 10px 20px;
+             border: none;
+             text-align: center;
+             float: left;
+
+        }
+        .nav:hover{background-color: rgb(121, 104, 142);}
+        .row::after{content: "";
+                    display: table;
+                    clear: both;}
+        .column{
+                float: left;
+                width: 100%;
+                
+        }
+        @media screen and (max-width: 80px)
+         { .column{width: 100%;}
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="header">响应式网页布局</div>
+    <p class="nav">小冰冰</p>
+    <p class="nav">小诺诺</p>
+    <p class="nav">小格子</p>
+    <p class="clear:both"></p>
+    <div class="row">
+    <div class="column">
+        <h1>第一列</h1>
+        <p>我爱学习......</p>
+    </div>
+    <div class="column">
+        <h1>第二列</h1>
+        <p>我跳舞......</p>
+    </div>
+    <div class="column">
+        <h1>第三列</h1>
+        <p>我爱唱歌.......</p>
+    </div>
+    </div>
+</body>
+</html>
